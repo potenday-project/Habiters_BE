@@ -1,14 +1,13 @@
 #footer {
-  position: fixed;
-  width: 1920px;
-  height: 204px;
+  position: absolute;
+  width: 100%;
   bottom: 0;
+  height: 204px;
   background: #f8f8f8;
   display: flex;
   flex-direction: column;
 }
-#logo {
-}
+
 @font-face {
   font-family: "Pretendard-Normal";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Normal.woff")

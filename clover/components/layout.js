@@ -11,11 +11,18 @@ const Layout = ({ children }) => {
     );
   else {
     return (
-      <>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      </>
+      <div style={{ height: "100vh" }}>
+        <div
+          style={{
+            position: "relative",
+            minHeight: "100%",
+          }}
+        >
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </div>
+      </div>
     );
   }
 };

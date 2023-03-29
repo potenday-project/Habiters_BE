@@ -11,19 +11,13 @@ const Footer = () => {
     <>
       <div id={styles.footer}>
         <div id={styles.logodiv}>
-          <Link
-            href={"/"}
-            style={{ textDecoration: "none" }}
-            className={router.pathname === "/" ? "active" : ""}
-          >
-            <Image
-              id={styles.logo}
-              src={logo}
-              height={24}
-              width={203.73}
-              alt="logo"
-            />
-          </Link>
+          <Image
+            id={styles.logo}
+            src={logo}
+            height={24}
+            width={203.73}
+            alt="logo"
+          />
         </div>
         <div id={styles.servicediv}>
           <div id={styles.service}>서비스 소개</div>

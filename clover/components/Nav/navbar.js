@@ -8,13 +8,15 @@ const Navbar = () => {
   return (
     <>
       <div id={styles.nav}>
-        <Link
-          href={"/"}
-          style={{ textDecoration: "none" }}
-          className={router.pathname === "/" ? "active" : ""}
-        >
-          <Image src={logo} height={24} width={203.73} alt="logo" />
-        </Link>
+        <div id={styles.logo}>
+          <Link
+            href={"/"}
+            style={{ textDecoration: "none" }}
+            className={router.pathname === "/" ? "active" : ""}
+          >
+            <Image src={logo} height={24} width={203.73} alt="logo" />
+          </Link>
+        </div>
 
         <div id={styles.category}>
           <Link
