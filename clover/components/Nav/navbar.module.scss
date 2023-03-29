@@ -1,42 +1,81 @@
 #nav {
-  position: relative;
-  width: 1920px;
+  font-family: Pretendard-Bold;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   height: 90px;
 }
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Normal";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Normal.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
 #habiters {
-  position: absolute;
+  font-family: Pretendard-Bold;
+  color: #121212;
+  font-size: 40px;
+  line-height: 52px;
   width: 203.73px;
-  height: 24px;
-  left: 370px;
-  top: 33px;
-}
-#mypage {
-  position: absolute;
-  width: 78px;
-  height: 26px;
-  left: 1472px;
-  top: 32px;
-}
-#myhabit {
-  position: absolute;
-  width: 63px;
-  height: 26px;
-  top: 32px;
-  left: 800px;
-}
-#habitmunity {
-  position: absolute;
-  width: 94px;
-  height: 26px;
-  top: 32px;
-  left: 920px;
 }
 #dot {
+  background-color: #937cf1;
   position: absolute;
   width: 6.77px;
   height: 6.75px;
-  left: 100px;
-  top: 12px;
-  background: #937cf1;
-  border-radius: 45%;
+  top: 52.5px;
+}
+#category {
+  display: flex;
+}
+#myhabit {
+  font-family: Pretendard-Normal;
+  color: #121212;
+  font-size: 18px;
+  line-height: 26px;
+}
+#habitmunity {
+  font-family: Pretendard-Normal;
+  color: #121212;
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: 40px;
+}
+#mypage {
+  font-family: Pretendard-Normal;
+  color: #121212;
+  font-size: 18px;
+  line-height: 26px;
+}
+#line {
+  margin: 0;
+  background-color: #dbdbdb;
+  position: absolute;
+  width: 1920px;
+  height: 1px;
+  left: 0px;
+  top: 89px;
 }

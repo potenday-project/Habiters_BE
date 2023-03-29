@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+#errorImg {
+  position: absolute;
+  width: 379px;
+  height: 298px;
+  left: 771px;
+  top: 240px;
+}
+#text {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+#textBox {
+  position: absolute;
+  width: 339px;
+  height: 52px;
+}

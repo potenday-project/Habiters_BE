@@ -1,23 +1,66 @@
-#habiters {
-  position: absolute;
-  width: 203.73px;
-  height: 24px;
-  left: 370px;
-  top: 48px;
-}
-#dot {
-  position: absolute;
-  width: 6.77px;
-  height: 6.75px;
-  left: 100px;
-  top: 12px;
-  background: #937cf1;
-  border-radius: 45%;
-}
 #footer {
-  position: absolute;
+  position: fixed;
   width: 1920px;
   height: 204px;
-  left: 0px;
-  top: 0px;
+  bottom: 0;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+#logo {
+}
+@font-face {
+  font-family: "Pretendard-Normal";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Normal.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+#service {
+  font-family: Pretendard-Normal;
+  color: #555555;
+  font-size: 14px;
+  line-height: 20px;
+}
+#clover {
+  position: absolute;
+}
+#logodiv {
+  margin-top: 48px;
+  margin-left: 370px;
+}
+#servicediv {
+  margin-left: 370px;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+#cloverdiv {
+  margin-left: 370px;
+  margin-top: 12px;
+}
+#use {
+  font-family: Pretendard-Normal;
+  color: #555555;
+  font-size: 14px;
+  line-height: 20px;
+}
+#block {
+  width: 1px;
+  height: 10px;
+  background: #a6a6a6;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#private {
+  font-family: Pretendard-Normal;
+  color: #555555;
+  font-size: 14px;
+  line-height: 20px;
+}
+#cloverdiv {
+  font-family: Pretendard-Normal;
+  color: #555555;
+  font-size: 14px;
+  line-height: 20px;
 }
