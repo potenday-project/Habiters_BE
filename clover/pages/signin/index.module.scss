@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Pretendard-Normal";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Normal.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+#logo {
+  display: flex;
+  margin: 200px 0px 24px 0px;
+  justify-content: center;
+}
+#infoDiv {
+  display: flex;
+  justify-content: center;
+}
+#info {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #121212;
+  position: absolute;
+  width: 550px;
+  height: 32px;
+}
+#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  margin-top: 56px;
+}
+#google {
+  background-color: #ffffff;
+  border: 1px solid #121212;
+  border-radius: 8px;
+  width: 600px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+#kakao {
+  background-color: #fae64c;
+  border: 1px solid #fae64c;
+  border-radius: 8px;
+  width: 600px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+#naver {
+  background-color: #00c300;
+  border: 1px solid #00c300;
+  border-radius: 8px;
+  width: 600px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+#signup {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+#text {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
