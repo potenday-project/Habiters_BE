@@ -1,0 +1,69 @@
+#footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 204px;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "Pretendard-Normal";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Normal.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+#service {
+  font-family: "Pretendard";
+  font-style: normal;
+  color: #555555;
+  font-size: 14px;
+  line-height: 20px;
+}
+#clover {
+  position: absolute;
+}
+#logodiv {
+  margin-top: 48px;
+  margin-left: 370px;
+}
+#servicediv {
+  margin-left: 370px;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+#cloverdiv {
+  margin-left: 370px;
+  margin-top: 12px;
+}
+#use {
+  font-family: "Pretendard";
+  font-style: normal;
+  color: #555555;
+  font-size: 14px;
+  line-height: 20px;
+}
+#block {
+  width: 1px;
+  height: 10px;
+  background: #a6a6a6;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#private {
+  font-family: "Pretendard";
+  font-style: normal;
+  color: #555555;
+  font-size: 14px;
+  line-height: 20px;
+}
+#cloverdiv {
+  font-family: "Pretendard";
+  font-style: normal;
+  color: #555555;
+  font-size: 14px;
+  line-height: 20px;
+}
