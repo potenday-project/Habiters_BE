@@ -5,22 +5,33 @@
   font-weight: 500;
   font-style: normal;
 }
+#errorDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 212.8px;
+  align-items: center;
+}
 #errorImg {
-  position: absolute;
-  width: 379px;
-  height: 298px;
-  left: 771px;
-  top: 240px;
+  margin-bottom: 40px;
 }
 #text {
   font-family: "Pretendard";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 18px;
   line-height: 26px;
+  color: #333333;
 }
-#textBox {
-  position: absolute;
-  width: 339px;
-  height: 52px;
+#main {
+  margin-top: 40px;
+  margin-bottom: 354px;
+}
+#mainBtn {
+  background: #937cf1;
+  border-radius: 50px;
+  color: white;
+  width: 240px;
+  height: 48px;
+  border: white;
+  font-size: 15px;
 }
