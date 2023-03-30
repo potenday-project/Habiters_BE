@@ -8,38 +8,40 @@ const Navbar = () => {
   return (
     <>
       <div id={styles.nav}>
-        <div id={styles.logo}>
-          <Link
-            href={"/"}
-            style={{ textDecoration: "none" }}
-            className={router.pathname === "/" ? "active" : ""}
-          >
-            <Image src={logo} height={24} width={203.73} alt="logo" />
-          </Link>
-        </div>
+        <Link
+          href={"/"}
+          style={{ textDecoration: "none" }}
+          id={styles.logo}
+          className={router.pathname === "/" ? "active" : ""}
+        >
+          <Image src={logo} height={24} width={203.73} alt="logo" />
+        </Link>
 
         <div id={styles.category}>
           <Link
             href={"/"}
             style={{ textDecoration: "none" }}
-            className={router.pathname === "/" ? "active" : ""}
+            className={router.pathname === "/" ? styles.active : ""}
+            id={styles.myhabit}
           >
-            <h5 id={styles.myhabit}>마이해빗</h5>
+            마이해빗
           </Link>
           <Link
-            href={"/"}
+            href={"/habitimunity"}
             style={{ textDecoration: "none" }}
-            className={router.pathname === "/" ? "active" : ""}
+            id={styles.habitmunity}
+            className={router.pathname === "/habitimunity" ? styles.active : ""}
           >
-            <h5 id={styles.habitmunity}>해비티뮤니티</h5>
+            해비티뮤니티
           </Link>
         </div>
         <Link
-          href={"/"}
+          href={"/mypage"}
           style={{ textDecoration: "none" }}
           className={router.pathname === "/" ? "active" : ""}
+          id={styles.mypage}
         >
-          <h5 id={styles.mypage}>마이페이지</h5>
+          마이페이지
         </Link>
       </div>
       <hr id={styles.line} />
