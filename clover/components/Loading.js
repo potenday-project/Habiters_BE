@@ -14,7 +14,7 @@ function Loading() {
       >
         <FadeLoader
           display="none"
-          color="blue"
+          color="#937cf1"
           height={15}
           width={5}
           radius={2}

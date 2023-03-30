@@ -1,62 +1,26 @@
-import {
-  collection,
-  getCountFromServer,
-  query,
-  where,
-} from "firebase/firestore";
-import { getSession, useSession } from "next-auth/react";
-import ProfileImage from "../../components/ProfileImage/ProfileImage";
-import { db } from "../api/firebaseConfig";
 import styles from "./index.module.scss";
-const MyPage = ({ boardCount, replyCount, sessionData }) => {
-  const { data: session } = useSession();
+import Image from "next/image";
+import logo from "../../public/images/avatar_default.png";
 
-  if (session) {
-    return (
-      <div id={styles.mypage}>
-        <h2 className={styles.headtext}>{session.user.name} 님</h2>
-        <div id={styles.activeinfo}>
-          <div>
-            <h4>작성 게시글 수</h4>
-            <h5>{boardCount}</h5>
-          </div>
-          <div>
-            <h4>작성 댓글 수</h4>
-            <h5>{replyCount}</h5>
-          </div>
-        </div>
-        <h3 className={styles.headtext}>{">"} 프로필 이미지 변경</h3>
-        <ProfileImage sessionData={sessionData}></ProfileImage>
+const MyPage = () => {
+  return (
+    <div id={styles.mypage}>
+      <div id={styles.mypageTitle}>마이페이지</div>
+      <Image src={logo} height={130} width={130} alt="logo" />
+      <div id={styles.email}>
+        <div id={styles.emailText}>이메일</div>
+        <input id={styles.emailInput} placeholder="bjw1622@gmail.com"></input>
       </div>
-    );
-  }
+      <div id={styles.nickname}>
+        <div id={styles.nicknameText}>닉네임</div>
+        <div id={styles.nicknameDiv}>
+          <input id={styles.nicknameInput} placeholder="해비터해비터"></input>
+          <button id={styles.nicknameChange}>수정</button>
+        </div>
+      </div>
+      <button id={styles.logout}>로그아웃</button>
+      <button id={styles.exit}>탈퇴하기</button>
+    </div>
+  );
 };
-
-export async function getServerSideProps(context) {
-  const sessionData = await getSession(context);
-
-  const collBoard = collection(db, "Board");
-  const boardCountQuery = query(
-    collBoard,
-    where("email", "==", `${sessionData.user.email}`)
-  );
-  const boardCountSnapShot = await getCountFromServer(boardCountQuery);
-  const boardCount = boardCountSnapShot.data().count;
-
-  const collReply = collection(db, "Reply");
-  const replyCountQuery = query(
-    collReply,
-    where("email", "==", `${sessionData.user.email}`)
-  );
-  const replyCountSnapShot = await getCountFromServer(replyCountQuery);
-  const replyCount = replyCountSnapShot.data().count;
-  return {
-    props: {
-      boardCount: boardCount,
-      replyCount: replyCount,
-      sessionData: sessionData,
-    },
-  };
-}
-
 export default MyPage;

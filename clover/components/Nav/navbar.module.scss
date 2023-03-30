@@ -8,18 +8,18 @@
 
 #nav {
   background-color: white;
-  display: flex;
-  align-items: center;
   height: 90px;
-  margin-left: 370px;
+  margin: 33px 0px 33px 370px;
+  display: flex;
+  height: 24px;
 }
-
+#logo {
+  margin-right: 280px;
+}
 #category {
   display: flex;
 }
-.categoryBtn:hover {
-  color: black;
-}
+
 #myhabit {
   font-family: "Pretendard";
   font-style: normal;
@@ -27,7 +27,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #121212;
-  margin-left: 288.27px;
+  margin-right: 40px;
 }
 #habitmunity {
   font-family: "Pretendard";
@@ -36,7 +36,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #121212;
-  margin-left: 40px;
+  margin-right: 413px;
 }
 #mypage {
   font-family: "Pretendard";
@@ -45,10 +45,10 @@
   font-size: 18px;
   line-height: 26px;
   color: #121212;
-  margin-left: 413px;
 }
 #line {
   border: 0;
   height: 1px;
   background: #bdbdbd;
+  margin: 0px;
 }
