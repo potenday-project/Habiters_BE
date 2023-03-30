@@ -77,10 +77,7 @@ const index = () => {
       <div id={styles.signup}>
         <div id={styles.text}>
           이미 회원이신가요?{" "}
-          <Link
-            href={"/signin"}
-            className={router.pathname === "/" ? "active" : ""}
-          >
+          <Link href={"/signin"} style={{ textDecoration: "none" }}>
             <span id={styles.test}>로그인하기</span>
           </Link>
         </div>

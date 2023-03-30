@@ -22,14 +22,14 @@ const Navbar = () => {
           <Link
             href={"/"}
             style={{ textDecoration: "none" }}
-            className={router.pathname === "/" ? "active" : ""}
+            className={styles.categoryBtn}
           >
             <h5 id={styles.myhabit}>마이해빗</h5>
           </Link>
           <Link
-            href={"/"}
+            href={"/habitimunity"}
             style={{ textDecoration: "none" }}
-            className={router.pathname === "/" ? "active" : ""}
+            className={styles.categoryBtn}
           >
             <h5 id={styles.habitmunity}>해비티뮤니티</h5>
           </Link>

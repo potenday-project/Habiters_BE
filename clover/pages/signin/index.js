@@ -80,6 +80,7 @@ const index = () => {
           <Link
             href={"/signup"}
             className={router.pathname === "/" ? "active" : ""}
+            style={{ textDecoration: "none" }}
           >
             <span id={styles.test}>회원가입하기</span>
           </Link>

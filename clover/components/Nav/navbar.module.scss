@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Pretendard-Normal";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Normal.woff")
+  font-family: "Pretendard-Meduim";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Meduim.woff")
     format("woff");
   font-weight: 500;
   font-style: normal;
@@ -17,10 +17,13 @@
 #category {
   display: flex;
 }
+.categoryBtn:hover {
+  color: black;
+}
 #myhabit {
   font-family: "Pretendard";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   line-height: 26px;
   color: #121212;
@@ -29,7 +32,7 @@
 #habitmunity {
   font-family: "Pretendard";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   line-height: 26px;
   color: #121212;
@@ -38,15 +41,14 @@
 #mypage {
   font-family: "Pretendard";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   line-height: 26px;
   color: #121212;
   margin-left: 413px;
 }
 #line {
-  margin: 0;
-  background-color: #dbdbdb;
-  position: absolute;
-  width: 100%;
+  border: 0;
+  height: 1px;
+  background: #bdbdbd;
 }
