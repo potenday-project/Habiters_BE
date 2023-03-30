@@ -1,9 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
-  images: {
-    domains: ["lh3.googleusercontent.com", "avatars.githubusercontent.com"],
-  },
+};
+const rewrites = async () => {
+  return [
+    {
+      source: "/:path*",
+      destination: "http://223.130.162.40:8080/habits/:path*",
+    },
+  ];
 };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
+module.exports = { rewrites };
+
+//http://223.130.162.40:8080/habits
