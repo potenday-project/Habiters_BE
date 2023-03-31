@@ -7,7 +7,6 @@ import com.clover.habbittracker.domain.habitcheck.entity.HabitCheck;
 import com.clover.habbittracker.global.entity.BaseEntity;
 import com.clover.habbittracker.domain.member.entity.Member;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -38,11 +37,7 @@ public class Habit extends BaseEntity {
 	@JoinColumn(name = "memberId")
 	private Member member;
 
-	@OneToMany(
-		mappedBy = "habit",
-		fetch = FetchType.LAZY,
-		cascade = CascadeType.REMOVE,
-		orphanRemoval = true)
+	@OneToMany(mappedBy = "habit",fetch = FetchType.LAZY)
 	private List<HabitCheck> habitChecks = new ArrayList<>();
 
 	public void setContent(String content) {
