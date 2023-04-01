@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+#intro {
+  overflow-x: hidden;
+}
+#first {
+  width: 1920px;
+  height: 960px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    #e1dafb -1.04%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+#introText {
+  margin-top: 24px;
+  margin-bottom: 56px;
+}
+#textdiscription {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #121212;
+}
+#btns {
+  width: 478px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+#signinbtn {
+  width: 240px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #937cf1;
+}
+#signupbtn {
+  margin-left: 8px;
+  width: 240px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: white;
+  border: 1px solid #937cf1;
+  color: #937cf1;
+}
+#scrollText {
+  margin-top: 124px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #937cf1;
+}
+#second {
+  width: 1920px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#title {
+  margin-top: 256px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+#subtitle {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #888888;
+  margin-top: 24px;
+}
+#third {
+  width: 1920px;
+  height: 808px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 24.57%,
+    #e1dafb 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#thirdtitle {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  color: #121212;
+  margin-top: 274px;
+}
+#thirdsubtitle {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #121212;
+  margin-top: 24px;
+}
+#thirdbtns {
+  width: 478px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 56px;
+}
