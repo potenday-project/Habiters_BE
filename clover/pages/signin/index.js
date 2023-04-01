@@ -12,7 +12,7 @@ const index = () => {
     <>
       <div id={styles.logo}>
         <Link
-          href={"/myhabit"}
+          href={"/"}
           style={{ textDecoration: "none" }}
           className={router.pathname === "/" ? "active" : ""}
         >
@@ -42,7 +42,7 @@ const index = () => {
           </div>
         </Link>
         <Link
-          href={"/"}
+          href={"http://223.130.162.40:8080/oauth2/authorization/kakao"}
           style={{ textDecoration: "none" }}
           className={router.pathname === "/" ? "active" : ""}
         >

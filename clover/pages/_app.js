@@ -4,6 +4,7 @@ import { SessionProvider } from "next-auth/react";
 import { useEffect, useState } from "react";
 import Loading from "../components/Loading";
 import { Router } from "next/router";
+import Head from "next/head";
 const MyApp = ({ session, Component, pageProps }) => {
   const [loading, setLoading] = useState(false);
 
@@ -18,11 +19,17 @@ const MyApp = ({ session, Component, pageProps }) => {
     Router.events.on("routeChangeComplete", end);
   }, []);
   return (
-    <SessionProvider session={session}>
-      <Layout>
-        {loading ? <Loading></Loading> : <Component {...pageProps} />}
-      </Layout>
-    </SessionProvider>
+    <>
+      <Head>
+        <title>Havit?Habit</title>
+        <link rel="icon" href="../public/favicon_habiters.ico" />
+      </Head>
+      <SessionProvider session={session}>
+        <Layout>
+          {loading ? <Loading></Loading> : <Component {...pageProps} />}
+        </Layout>
+      </SessionProvider>
+    </>
   );
 };
 

@@ -6,7 +6,6 @@ import googleLogo from "../../public/images/super-g.png";
 import kakaoLogo from "../../public/images/Union.png";
 import naverLogo from "../../public/images/naver.png";
 import styles from "./index.module.scss";
-import axios from "axios";
 
 const index = () => {
   const router = useRouter();
@@ -15,7 +14,7 @@ const index = () => {
     <>
       <div id={styles.logo}>
         <Link
-          href={"/myhabit"}
+          href={"/"}
           style={{ textDecoration: "none" }}
           className={router.pathname === "/" ? "active" : ""}
         >

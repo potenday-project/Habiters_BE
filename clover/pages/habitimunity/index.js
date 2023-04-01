@@ -9,11 +9,14 @@ const index = () => {
   const accessToken =
     "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjksImlhdCI6MTY4MDMzNTI5MSwiZXhwIjoxNjgwOTQwMDkxfQ.J8M_Z7Z6ZNMOcy5Pcx2oslObtZG3q_uiqeyYmea_x3E";
   const test = async () => {
-    const result = await axios.get("http://223.130.162.40:8080/users/me", {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    });
+    const result = await axios.get(
+      "http://223.130.162.40:8080//oauth2/authorization/kakao",
+      {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      }
+    );
     console.log(result.data);
   };
   return (

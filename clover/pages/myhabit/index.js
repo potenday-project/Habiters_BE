@@ -1,10 +1,32 @@
 import styles from "./index.module.scss";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import Axios from "axios";
 
 const index = () => {
+  const router = useRouter();
+  const routerIndex = router.query.accessToken;
+  const [data, setData] = useState("");
+  const getData = async () => {
+    try {
+      await Axios.get(`http://223.130.162.40:8080/users/me`, {
+        headers: { Authorization: `Bearer ${routerIndex}` },
+      }).then((response) => {
+        console.log(response.data);
+        setData(response.data);
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    if (!router.isReady) return;
+    getData();
+  }, [router.isReady]);
   return (
     <div id={styles.myhabit}>
-      <div id={styles.title}>안녕하세요, 해비터_백재원님!</div>
+      <div id={styles.title}>안녕하세요,해비터_백재원님!</div>
       <div id={styles.tab}>
         <Link
           href="/myhabit"
