@@ -12,7 +12,7 @@ const index = () => {
     <>
       <div id={styles.logo}>
         <Link
-          href={"/"}
+          href={"/myhabit"}
           style={{ textDecoration: "none" }}
           className={router.pathname === "/" ? "active" : ""}
         >
