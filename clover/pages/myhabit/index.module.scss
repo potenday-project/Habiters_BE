@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+#myhabit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#title {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #121212;
+  margin-top: 72px;
+}
+#tab {
+  margin-top: 48px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50px;
+  width: 478px;
+  height: 47px;
+  color: #dbdbdb;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+}
+#habittracker {
+  width: 240px;
+  height: 48px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  background-color: #937cf1;
+}
+#retrospect {
+  width: 240px;
+  height: 48px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888888;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+#myhabitmain {
+  width: 1180px;
+  height: 508px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 404px;
+}
+#myhabitcalendar {
+  width: 880px;
+  height: 304px;
+}
+#myhabittitle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#plusbtn {
+  margin-left: 205px;
+  width: 160px;
+  height: 32px;
+  background-color: #937cf1;
+  color: white;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #937cf1;
+  border-radius: 8px;
+}
+#maincalendar {
+  margin-top: 24px;
+  width: 880px;
+  height: 192px;
+  border: 1px solid #ededed;
+  border-radius: 16px;
+}
+#daycheck {
+}
+#month {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+#daycheck {
+  width: 280px;
+  height: 508px;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 16px;
+  margin-left: 20px;
+}
+#daychecktitle {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #121212;
+  margin: 24px 0px 16px 20px;
+}
+#checkbox {
+  width: 192px;
+  height: 72px;
+  background: #e1dafb;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-left: 20px;
+}
+#checkboxtitle {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+#checkboxbtn {
+  margin-top: 16px;
+  width: 192px;
+  height: 32px;
+  background: #937cf1;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #937cf1;
+}
+#checkbox1 {
+  width: 192px;
+  height: 72px;
+  background: #b7e2fb;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-left: 20px;
+  margin-top: 16px;
+}
+#checkboxtitle1 {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+#checkboxbtn1 {
+  margin-top: 16px;
+  width: 192px;
+  height: 32px;
+  background: #57bcf5;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #57bcf5;
+}

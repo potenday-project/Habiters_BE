@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+#myhabit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#title {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #121212;
+  margin-top: 72px;
+}
+#tab {
+  margin-top: 48px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50px;
+  width: 478px;
+  height: 47px;
+  color: #dbdbdb;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+}
+#habittracker {
+  width: 240px;
+  height: 48px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888888;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+#retrospect {
+  width: 240px;
+  height: 48px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  background-color: #937cf1;
+}

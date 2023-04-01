@@ -7,9 +7,9 @@ import Link from "next/link";
 const index = () => {
   const router = useRouter();
   const accessToken =
-    "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjUsImlhdCI6MTY4MDE4MjI1OSwiZXhwIjoxNjgwNzg3MDU5fQ.-HPjbwQ1FaS74HQtI-5nsJFzo8Rbqy2tkVsMS4y02AY";
+    "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjksImlhdCI6MTY4MDMzNTI5MSwiZXhwIjoxNjgwOTQwMDkxfQ.J8M_Z7Z6ZNMOcy5Pcx2oslObtZG3q_uiqeyYmea_x3E";
   const test = async () => {
-    const result = await axios.get("http://223.130.162.40:8080/habits", {
+    const result = await axios.get("http://223.130.162.40:8080/users/me", {
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },

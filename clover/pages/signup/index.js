@@ -6,8 +6,11 @@ import googleLogo from "../../public/images/super-g.png";
 import kakaoLogo from "../../public/images/Union.png";
 import naverLogo from "../../public/images/naver.png";
 import styles from "./index.module.scss";
+import axios from "axios";
+
 const index = () => {
   const router = useRouter();
+
   return (
     <>
       <div id={styles.logo}>
@@ -42,7 +45,7 @@ const index = () => {
           </div>
         </Link>
         <Link
-          href={"/"}
+          href={"http://223.130.162.40:8080/oauth2/authorization/kakao"}
           style={{ textDecoration: "none" }}
           className={router.pathname === "/" ? "active" : ""}
         >

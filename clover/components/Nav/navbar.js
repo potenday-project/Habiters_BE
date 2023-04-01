@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <div id={styles.category}>
           <Link
-            href={"/"}
+            href={"/myhabit"}
             style={{ textDecoration: "none" }}
             className={router.pathname === "/" ? styles.active : ""}
             id={styles.myhabit}
