@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   if (
     router.pathname == "/signin" ||
     router.pathname == "/signup" ||
-    router.pathname == "/intro"
+    router.pathname == "/"
   )
     return (
       <>
