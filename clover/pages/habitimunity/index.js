@@ -23,7 +23,7 @@ const index = () => {
       </div>
       <div id={styles.text}>여러분을 얼른 만나기위해 노력하고 있어요!</div>
       <div id={styles.text}>조금만 기다려주시면 곧 만날 수 있을거에요.</div>
-      <button onClick={test}></button>
+      {/* <button onClick={test}></button> */}
     </div>
   );
 };

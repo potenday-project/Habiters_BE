@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <div id={styles.nav}>
         <Link
-          href={"/"}
+          href={"/intro"}
           style={{ textDecoration: "none" }}
           id={styles.logo}
           className={router.pathname === "/" ? "active" : ""}

@@ -60,3 +60,144 @@
   line-height: 28px;
   background-color: #937cf1;
 }
+#myhabitmain {
+  width: 1180px;
+  height: 508px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 404px;
+}
+#myhabitcalendar {
+  width: 880px;
+  height: 304px;
+}
+#myhabittitle {
+  display: flex;
+  margin-bottom: 24px;
+}
+#month {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: auto;
+}
+#myhabitmain {
+  width: 1180px;
+  height: 508px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 404px;
+}
+#maincard {
+  width: 880px;
+  height: 160px;
+  display: flex;
+  margin-bottom: 20px;
+}
+#leftcard {
+  background: #f4f4f4;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px 0px 0px 8px;
+  width: 106px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#dayweek {
+  width: 37px;
+  height: 20px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  margin-top: 27px;
+  white-space: nowrap;
+}
+#day {
+  width: 42px;
+  height: 42px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #333333;
+}
+#deletebtn {
+  background: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  margin-top: 12px;
+}
+#rightcard {
+  width: 710px;
+  height: 120px;
+  padding: 20px 32px 20px 32px;
+  background: #ffffff;
+  border-width: 1px 1px 1px 0px;
+  border-style: solid;
+  border-color: #dbdbdb;
+  border-radius: 0px 8px 8px 0px;
+}
+#retrospectInput {
+  margin-left: 20px;
+  width: 280px;
+  height: 444px;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 16px;
+}
+#retrospecttitle {
+  width: 92px;
+  height: 28px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #121212;
+  margin-top: 24px;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+#retrospectdiv {
+  width: 206px;
+  height: 240px;
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  margin: 16px 20px 4px 20px;
+  padding: 16px;
+}
+#retrospectfont {
+  margin-left: 232px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #888888;
+}
+#retrospectbtn {
+  width: 240px;
+  height: 48px;
+  background: #937cf1;
+  border-radius: 8px;
+  margin-top: 16px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin-left: 20px;
+  border: 1px solid #937cf1;
+}
