@@ -3,7 +3,11 @@ import Footer from "./Footer/footer";
 import { useRouter } from "next/router";
 const Layout = ({ children }) => {
   const router = useRouter();
-  if (router.pathname == "/signin" || router.pathname == "/signup")
+  if (
+    router.pathname == "/signin" ||
+    router.pathname == "/signup" ||
+    router.pathname == "/intro"
+  )
     return (
       <>
         <main>{children}</main>
